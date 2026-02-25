@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="ZPTTLink Logo" width="200"/>
+  <img src="assets/logo.png" alt="Watch and Reboot Logo" width="200"/>
 </p>
 
 <p align="center">
