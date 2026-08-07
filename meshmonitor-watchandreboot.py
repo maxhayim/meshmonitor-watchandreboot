@@ -260,10 +260,10 @@ def meshtastic_send_text(
 
     iface = None
     try:
-        if tcp_host:
-            iface = TCPInterface(hostname=tcp_host, portNumber=tcp_port)
-        elif serial_path:
+        if serial_path:
             iface = SerialInterface(devPath=serial_path)
+        elif tcp_host:
+            iface = TCPInterface(hostname=tcp_host, portNumber=tcp_port)
         else:
             append_log(log_file, "WARN: meshtastic notify enabled but no tcp_host or serial_path provided")
             return False

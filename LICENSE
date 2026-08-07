@@ -24,15 +24,12 @@ IN THE SOFTWARE.
 
 Third-Party Acknowledgments
 
-Sky and Sea Alert is an independent, open-source MeshMonitor Auto Responder script designed to integrate with:
+Watch and Reboot is an independent, open-source watchdog and remediation tool designed to integrate with:
 
-- MeshMonitor (by Yeraze)  
-- Meshtastic (open-source LoRa mesh networking platform)  
-- Local ADS-B software such as dump1090 and readsb  
-- Local AIS software such as AIS-catcher and rtl_ais  
-- ADS-B Exchange API Lite (via RapidAPI)  
-- AIS Hub API (https://www.aishub.net/api)
+- MeshMonitor (by Yeraze)
+- Meshtastic (open-source LoRa mesh networking platform), via Yeraze/meshtastic-ble-bridge and the Python `meshtastic` library
+- systemd and Docker / Docker Compose (for service and container restarts)
+- OpenSSH (for remote health checks and remediation)
 
-
-All trademarks, logos, and brand names are the property of their respective owners.  
-Sky and Sea Alert is not affiliated with, endorsed by, or officially connected to MeshMonitor, Meshtastic or any other referenced platform, provider, or organization.
+All trademarks, logos, and brand names are the property of their respective owners.
+Watch and Reboot is not affiliated with, endorsed by, or officially connected to MeshMonitor, Meshtastic, systemd, Docker, OpenSSH, or any other referenced platform, provider, or organization.

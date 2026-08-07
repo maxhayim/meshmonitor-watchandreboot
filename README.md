@@ -13,7 +13,7 @@
 
 # 🔃 Watch and Reboot 
 
-Watch and Reboot is a lightweight Python script, watchdog and remediation tool designed for [**MeshMonitor**](https://github.com/Yeraze/MeshMonitor) and [**Meshstatic**](https://meshtastic.org/) based deployments.
+Watch and Reboot is a lightweight Python script, watchdog and remediation tool designed for [**MeshMonitor**](https://github.com/Yeraze/MeshMonitor) and [**Meshtastic**](https://meshtastic.org/) based deployments.
 
 It can:
 
