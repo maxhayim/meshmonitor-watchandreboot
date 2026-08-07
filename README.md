@@ -13,7 +13,7 @@
 
 # 🔃 Watch and Reboot 
 
-Watch and Reboot is a lightweight Python script, watchdog and remediation tool designed for [**MeshMonitor**](https://github.com/Yeraze/MeshMonitor) and [**Meshtastic**](https://meshtastic.org/) based deployments.
+Watch and Reboot is a lightweight Python script, watchdog and remediation tool designed for [**MeshMonitor**](https://github.com/Yeraze/MeshMonitor) deployments over [**Meshtastic**](https://meshtastic.org/), [**MeshCore**](https://meshcore.io/), or any other mesh network MeshMonitor supports.
 
 It can:
 
@@ -113,6 +113,8 @@ Use this for:
 ---
 
 ## Mode: BLE (Bridge-Based)
+
+Meshtastic-specific — the BLE bridge and Python `meshtastic` library have no MeshCore equivalent, so this mode does not apply to MeshCore or other mesh networks.
 
 Health check:
 - TCP connect to bridge_host:port (default 127.0.0.1:4403)
@@ -215,13 +217,13 @@ MM_WEBHOOK_URL=https://example.com/webhook
 
 ## Custom Shell Hook
 
-MM_NOTIFY_CMD=echo "{EVENT} {HOST} {DETAILS}"
+MM_NOTIFY_CMD=echo "{EVENT} {HOST} {USER} {DETAILS}"
 
 ---
 
 # Optional Meshtastic “Recovered” Message
 
-Requires Python meshtastic library installed.
+Meshtastic-specific — sends over the Python `meshtastic` library, with no MeshCore equivalent. Requires the library installed.
 
 MM_MESHTASTIC_NOTIFY=1  
 MM_MESHTASTIC_TEXT=Recovered: {HOST} is back online  
